@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Aquasense</title>
+    <link rel="stylesheet" href="./styles/signin.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav .login-btn {
+            background: #fff;
+            color: #0077b6;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        nav .login-btn:hover {
+            background: #005f87;
+            color: #fff;
+        }
+
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: Baloo;
+            font-size: 35px;
+            margin: 0;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aquasense</h1>
+        <nav>
+            <a href="index.html" class="login-btn">Home</a>
+            <a href="about.html" class="login-btn">About</a>
+            <a href="Contact.html" class="login-btn">Contact</a>
+            <a href="Signin.html" class="login-btn">Sign IN / UP</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <p>Ensuring clean and safe water for everyone</p>
+        <!-- <form action="./loadingSignin.html" method="post"> -->
+        <form action="./loadingSignin.html">
+            <input type="text" placeholder="Full Name" name="fullname">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password">
+            <input type="password" placeholder="Confirm Password" name="confirmPassword">
+            <input type="number" placeholder="Phone Number" name="phoneNumber">
+            <input type="text" placeholder="Country" name="country">
+            <a href="loadingSignin.html"><input type="submit" value="Sign Up"></a>
+        </form>
+        <a href="Signin.html">Already have an account? Sign In</a>
+    </div>
+</body>
+
+</html>

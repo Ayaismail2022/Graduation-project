@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data Dashboard</title>
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav .login-btn {
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #fff;
+            color: #0077b6;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        nav .login-btn:hover {
+            background: #005f87;
+            color: #fff;
+        }
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-family: Baloo;
+            font-size: 2rem;
+        }
+        header nav {
+            gap: 25px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: Baloo;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 140px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+         h2{
+            font-size: 2rem;
+            margin-top: 15px;
+            color: #007acc;
+            text-align: center;
+        }
+        .sensor-card {
+            background-color: white;
+            width: 300px;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sensor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .sensor-card h2 {
+            color: #0077b6;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .sensor-card p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ِAquasence </h1>
+        
+        <nav>
+            <a href="loading3.html" class="login-btn">Home</a>
+            <a href="about.html" class="login-btn">About</a>
+            <a href="Contact.html" class="login-btn">Contact</a>
+        </nav>
+    </header>
+    <h2>Sensors Data</h2>
+    <div class="container">
+        
+        <!-- pH Sensor -->
+        <div class="sensor-card">
+            <h2>pH Level</h2>
+            <p id="ph-value">7.2</p>
+        </div>
+
+        <!-- Conductivity Sensor -->
+        <div class="sensor-card">
+            <h2>Conductivity</h2>
+            <p id="conductivity-value">500 μS/cm</p>
+        </div>
+
+        <!-- Turbidity Sensor -->
+        <div class="sensor-card">
+            <h2>Turbidity</h2>
+            <p id="turbidity-value">2.3 NTU</p>
+        </div>
+
+        <!-- Temperature Sensor -->
+        <div class="sensor-card">
+            <h2>Temperature</h2>
+            <p id="temperature-value">25°C</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Water Quality Monitoring | Designed for a cleaner future.</p>
+    </footer>
+</body>
+</html>

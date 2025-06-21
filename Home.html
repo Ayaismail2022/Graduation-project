@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Water Quality Awareness</title>
+</head>
+<body>
+    <header>
+        <h1>ِAquasence</h1>
+        <nav>
+            <a href="Home.html" class="login-btn">Home</a>
+            <a href="about.html" class="login-btn">About</a>
+            <a href="Contact.html" class="login-btn">Contact</a>
+            <a href="loading.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+        <pre>
+            <h2>Protect Our Water, Protect Our Future</h2>
+            <h3>Learn how to test, conserve, and improve water quality.</h3>
+        </pre>
+
+    <section class="section">
+        <div class="cards">
+            <div class="card">
+                <img src="images/test2.jpg" alt="Testing Water">
+                 <div class="text">
+                    <a id="protected-link" href="Water testing.html"><h3>Water Testing</h3></a>
+                <p>Discover how to measure water quality effectively.</p>
+                 </div> 
+            </div>
+            <div class="card">
+                <img src="images/pollution.jpg" alt="Polluted Water">
+                <div class="text">
+                    <a href="pollution.html"><h3>Solve water Pollution</h3></a>
+                <p>Understand the causes and solutions for water pollution.</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Conservation.jpg" alt="Water Conservation">
+                <div class="text">
+                    <a href="Conservation.html"><h3>Water Conservation</h3></a>
+                <p>Explore tips to save water in your daily life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Water Quality Awareness | Designed with care for the environment.</p>
+    </footer>
+    <script>
+        
+        let isUserLoggedIn = false; 
+
+        const link = document.getElementById('protected-link');
+
+        link.addEventListener('click', function(event) {
+            if (!isUserLoggedIn) {
+                event.preventDefault();
+                alert("Please log in first to see the results!");
+                window.location.href = "loading.html"; 
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Aquasense</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            position: relative;
+            padding-bottom: 150px;
+        }
+
+        nav .login-btn {
+            background: #fff;
+            color: #0077b6;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        nav .login-btn:hover {
+            background: #005f87;
+            color: #fff;
+        }
+
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: Baloo;
+            font-size: 35px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        #aboutSection {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            border-radius: 35px;
+            padding: 30px 50px;
+            max-width: 860px;
+            /* margin-bottom: 70px; */
+            margin: 70px auto;
+
+            /* border-radius: 555px;
+            padding: 30px 70px;
+            max-width: 900px;
+            height: 450px; */
+        }
+
+        #aboutSection h1 {
+            font-size: 2.5rem;
+        }
+
+        #aboutSection h2 {
+            margin: 55px 0 25px;
+        }
+
+        #aboutSection p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        #teamSection {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        #teamSection h2 {
+            text-align: center;
+            color: #0077b6;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .team>div {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .team-member {
+            background-color: #ffffff;
+            padding: 25px 2cqh;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            width: 250px;
+            height: 300px;
+        }
+
+        .team-member:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: #333 1px solid;
+        }
+
+        .team-member img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+            color: #0077b6;
+            text-align: center;
+        }
+
+        .team-member p,
+        pre {
+            font-size: 0.9rem;
+            color: #555;
+            text-align: center;
+        }
+
+        .team-member pre {
+            line-height: 1.9;
+        }
+
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aquasense</h1>
+        <nav>
+            <a href="index.html" class="login-btn">Home</a>
+            <a href="#" class="login-btn">About</a>
+            <a href="Contact.html" class="login-btn">Contact</a>
+            <a href="Signin.html" class="login-btn">Sign IN / UP</a>
+        </nav>
+    </header>
+    <section id="aboutSection">
+        <h1>About Us</h1>
+        <h2>Who We Are</h2>
+        <p>
+            At AI Empowered Water Quality Monitoring, we are committed to ensuring
+            access to safe and clean drinking water for everyone. Our mission is to
+            leverage advanced AI technologies and embedded systems to monitor,
+            analyze, and report on water quality in real time.
+        </p>
+        <p>
+            With a vision to create a healthier world, we focus on innovation,
+            precision, and user-friendly solutions to address the global challenges
+            of water contamination and scarcity. Our system empowers individuals,
+            organizations, and governments with actionable insights to make informed
+            decisions about water safety.
+        </p>
+    </section>
+    <section id="teamSection">
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div>
+                <div class="team-member">
+                    <img src="./images/person.jpg" alt="Team Member" />
+                    <h3>Aya Ismail Naguib </h3>
+                    <div>
+                        <pre>Mobile App and
+Web Developer</pre>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./images/person.jpg" alt="Team Member" />
+                    <h3>Habiba Mohamed Mahmoud</h3>
+                    <pre>Embedded Systems
+Engineer</pre>
+                </div>
+                <div class="team-member">
+                    <img src="./images/person.jpg" alt="Team Member" />
+                    <h3>Kerollos Ehab Reffat</h3>
+                    <p>AI Engineer</p>
+                </div>
+            </div>
+            <div>
+                <div class="team-member">
+                    <img src="./images/person.jpg" alt="Team Member" />
+                    <h3>Khaled Abdelazeem Hamed</h3>
+                    <p>Web Designer</p>
+                </div>
+                <div class="team-member">
+                    <img src="./images/person.jpg" alt="Team Member" />
+                    <h3>Michael Medhat Gerace</h3>
+                    <pre>Embedded Systems
+Engineer</pre>
+                </div>
+                <div class="team-member">
+                    <img src="./images/person.jpg" alt="Team Member" />
+                    <h3>Mohamed Emad El-Den</h3>
+                    <p>AI Researcher</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>2025 &copy; Aquasense Team. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
